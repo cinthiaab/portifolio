@@ -88,7 +88,7 @@ body {
 }
 #middle h1 {
     color:#fff;
-    font-size:60px;
+    font-size:70px;
     text-decoration:underline;
 }
 #about {
@@ -187,23 +187,19 @@ body {
     overflow-y:auto;
     display:none;
 }
-.container div {
-    font-size:25px;
-    margin:20px 0px;
-    transition:0.4s ease-in-out;
-}
+
 .container div:hover {
     cursor:pointer;
 }
 .container section {
-    margin:8vh 0px;
+    margin:1vh 0px;
 }
 #used div{
     font-size:14px !important;
     display:inline-block;
     padding:8px 10px;
     border:2px solid #fff;
-    margin:0px 10px;
+    margin:10px 10px;
     border-radius:50px;
 }
 #used:hover {
@@ -218,6 +214,7 @@ body {
 }
 .container p {
     font-size:21px;
+    margin: 0 0 30px 0;
 }
 .btn_one {
     font-size:18px;
@@ -387,7 +384,7 @@ body {
     display: flex;
     justify-content: flex-start;
     font-weight: 600;
-    font-size: 1.3rem;
+    font-size: 1.15rem;
     position: relative;
 }
 .skills .item-text span:last-child{
@@ -420,7 +417,7 @@ body {
     height: 16px;
     width: 100%;
     background-color: var(--nero);
-    overflow:visible;
+    overflow:hidden;
     opacity: 0.6;
 }
 .progress-bar{
@@ -501,4 +498,19 @@ body {
     align-items: flex-start;
     display: flex;
     flex-direction: column;
+}
+.container .subtitle {
+    color:#fff;
+    font-size:50px;
+    text-decoration:underline;
+    margin: 20px 0 0 0;
+    width: 300px;
+    height: 100px;
+}
+.btn_projetos {
+    margin: 40px 0;
+}
+#projeto2{
+    display: none;
+    overflow: hidden;
 }

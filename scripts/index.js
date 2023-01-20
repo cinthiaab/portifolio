@@ -18,6 +18,8 @@ function showwork(){
     setTimeout(function(){
         $("#work_container").removeClass("animated slideInRight");
     },800);
+    
+    showprojeto1();
 }
 function closework(){
     $("#work_container").addClass("animated slideOutRight");
@@ -51,3 +53,22 @@ setTimeout(function(){
       $("#work").removeClass("animated fadeIn");
     },1000);
 },1500);
+function showprojeto1(){
+    $("#projeto1").css("display","inherit");
+    closeprojeto2();
+}
+function closeprojeto1(){
+    
+    $("#projeto1").css("display","none");
+    
+}
+function showprojeto2(){
+    $("#projeto2").css("display","inherit");
+    
+    closeprojeto1();
+}
+function closeprojeto2(){
+    
+    $("#projeto2").css("display","none");
+    
+}
