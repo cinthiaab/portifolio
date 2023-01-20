@@ -88,7 +88,7 @@ body {
 }
 #middle h1 {
     color:#fff;
-    font-size:70px;
+    font-size:60px;
     text-decoration:underline;
 }
 #about {
@@ -182,7 +182,7 @@ body {
     background:linear-gradient(to right, #3c063b, #2a1844, #182247, #0b2843, #102c3c);
     color:#fff;
     z-index:9;
-    position:fixed;
+    position:relative;
     max-height:100vh;
     overflow-y:auto;
     display:none;
@@ -321,7 +321,7 @@ body {
     background: rgb(98,56,150); 
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: rgb(98,56,150)); 
+    background: rgb(98,56,150); 
 }
 ::selection {
 	color: #fff;
@@ -450,4 +450,55 @@ body {
 }
 .progress-bar.w-70{
     width: 70%;
+}
+.btn_cv {
+    font-size:22px;
+    font-family: 'Josefin Sans', sans-serif;
+    color:#7C1F4A;
+    background:#fff;
+    border:0.5px solid #fff;
+    padding:15px 40px;
+    border-radius:80px;
+    font-weight:bold;
+    margin:3vh 20px;
+    transition:0.4s ease-in-out;
+    text-decoration: none;
+}
+.btn_cv:hover {
+    cursor:pointer;
+    color: #fff;
+    background-color: #7C1F4A;
+    text-decoration: underline;
+}
+.container .aboutme {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly
+}
+.container .aboutme .texto {
+    width:80vw;
+    height:60vh;
+    align-items: center;
+}
+.photo img {
+    border-radius: 80%;
+    width: 200px;
+    height: 200px;
+}
+.aboutme .perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    height: 150px;
+    justify-content: space-between;
+}
+#about_container section {
+    display: flex;
+    flex-direction: row;
+}
+#work_container section{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
 }
