@@ -30,7 +30,7 @@ body {
     align-items: center;
 }
 #spinner {
-    animation: rotate 0.56s infinite linear;
+    animation: rotate 0.30s infinite linear;
     width:50px;
     height:50px;
     border:14px solid #fff;
@@ -473,8 +473,8 @@ body {
     justify-content:space-evenly
 }
 .container .aboutme .texto {
-    width:80vw;
-    height:60vh;
+    width:800px;
+    height: 250px;;
     align-items: center;
 }
 .photo img {
@@ -486,7 +486,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 600px;
+    width: 400px;
     height: 150px;
     justify-content: space-between;
 }
@@ -513,4 +513,36 @@ body {
 #projeto2{
     display: none;
     overflow: hidden;
+}
+.interesse div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    width: 800px;
+    height: 150px;
+}
+.interesse img {
+    border-radius: 22%;
+    width: 200px;
+    height: 110px;
+    border: 1px border-shadow white;
+    padding: 10px 20px;
+}
+.interesse p {
+    align-self: center;
+    width: max-content;
+    height: max-content;
+    padding: 20px 10px;
+}
+.interesse i {
+    font-size: 53px;
+}
+
+#efeito:hover {
+    cursor:pointer;
+    transition:0.8s step-end;
+    font-weight:bold;
+    font-size: 60px;
+    color:rgb(187, 145, 239);
 }

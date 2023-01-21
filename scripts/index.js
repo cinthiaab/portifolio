@@ -4,6 +4,8 @@ function showabout(){
     setTimeout(function(){
         $("#about_container").removeClass("animated slideInLeft");
     },800);
+
+    showarea1();
 }
 function closeabout(){
     $("#about_container").addClass("animated slideOutLeft");
@@ -53,22 +55,57 @@ setTimeout(function(){
       $("#work").removeClass("animated fadeIn");
     },1000);
 },1500);
+
+/* funções - projetos */
 function showprojeto1(){
     $("#projeto1").css("display","inherit");
     closeprojeto2();
 }
 function closeprojeto1(){
-    
     $("#projeto1").css("display","none");
-    
 }
 function showprojeto2(){
     $("#projeto2").css("display","inherit");
-    
     closeprojeto1();
 }
 function closeprojeto2(){
-    
     $("#projeto2").css("display","none");
-    
+}
+
+/* funções - areas de interesses */
+function showarea1(){
+    $("#area1").addClass("animated fadeIn");
+    $("#area1").css("display","flex");
+    closearea2();
+    closearea3();
+}
+function closearea1(){
+    setTimeout(function(){
+        $("#area1").removeClass("animated fadeIn");
+    },400);
+    $("#area1").css("display","none");
+}
+function showarea2(){
+    closearea1();
+    closearea3();
+    $("#area2").addClass("animated fadeIn");
+    $("#area2").css("display","flex");
+}
+function closearea2(){
+    setTimeout(function(){
+        $("#area2").removeClass("animated fadeIn");
+    },400);
+    $("#area2").css("display","none");
+}
+function showarea3(){
+    closearea2();
+    closearea1();
+    $("#area3").addClass("animated fadeIn");
+    $("#area3").css("display","flex");
+}
+function closearea3(){
+    setTimeout(function(){
+        $("#area3").removeClass("animated fadeIn");
+    },400);
+    $("#area3").css("display","none");
 }
