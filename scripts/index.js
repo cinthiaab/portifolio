@@ -74,15 +74,15 @@ function closeprojeto2(){
 
 /* funções - areas de interesses */
 function showarea1(){
-    $("#area1").addClass("animated fadeIn");
-    $("#area1").css("display","flex");
     closearea2();
     closearea3();
+    $("#area1").addClass("animated fadeIn");
+    $("#area1").css("display","flex");
 }
 function closearea1(){
     setTimeout(function(){
         $("#area1").removeClass("animated fadeIn");
-    },400);
+    },800);
     $("#area1").css("display","none");
 }
 function showarea2(){
@@ -94,7 +94,7 @@ function showarea2(){
 function closearea2(){
     setTimeout(function(){
         $("#area2").removeClass("animated fadeIn");
-    },400);
+    },800);
     $("#area2").css("display","none");
 }
 function showarea3(){
@@ -106,6 +106,6 @@ function showarea3(){
 function closearea3(){
     setTimeout(function(){
         $("#area3").removeClass("animated fadeIn");
-    },400);
+    },800);
     $("#area3").css("display","none");
 }

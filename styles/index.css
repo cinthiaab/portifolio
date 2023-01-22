@@ -194,19 +194,23 @@ body {
 .container section {
     margin:1vh 0px;
 }
+
 #used div{
-    font-size:14px !important;
+    font-size:14px;
     display:inline-block;
     padding:8px 10px;
     border:2px solid #fff;
-    margin:10px 10px;
+    margin: 40px 10px;
     border-radius:50px;
+    justify-content: center;
 }
 #used:hover {
     cursor:text;
 }
 #used div:hover {
-    cursor:text;
+    cursor:pointer;
+    font-size: 15px;
+    transition: 0.3s ease-in;
 }
 .container h1 {
     font-size:60px;
@@ -214,7 +218,7 @@ body {
 }
 .container p {
     font-size:21px;
-    margin: 0 0 30px 0;
+    margin: 0 0 2px 0;
 }
 .btn_one {
     font-size:18px;
@@ -225,13 +229,15 @@ body {
     padding:8px 40px;
     border-radius:80px;
     font-weight:bold;
-    margin:2vh 10px;
+    margin:1vh 10px;
     transition:0.4s ease-in-out;
 }
 .btn_one:hover {
     cursor:pointer;
     color:#115473;
     background:#fff;
+    padding:8px 50px;
+    transition:0.4s ease-in-out;
 }
 .btn_two {
     font-size:18px;
@@ -242,12 +248,10 @@ body {
     padding:8px 40px;
     border-radius:80px;
     font-weight:bold;
-    margin:2vh 10px;
-    transition:0.4s ease-in-out;
+    margin:1vh 10px;
 }
 .btn_two:hover {
     cursor:pointer;
-    padding:8px 60px;
 }
 .container form input {
     width:46%;
@@ -384,11 +388,15 @@ body {
     display: flex;
     justify-content: flex-start;
     font-weight: 600;
-    font-size: 1.15rem;
+    font-size: 20px;
     position: relative;
+    font-weight: 1.5;
 }
 .skills .item-text span:last-child{
     position: absolute;
+}
+.skills .item-text .w-98{
+    margin-left: 95%;
 }
 .skills .item-text .w-90{
     margin-left: 85%;
@@ -411,6 +419,9 @@ body {
 .skills .item-text .w-50{
     margin-left: 45%;
 }
+.skills .item-text .w-40{
+    margin-left: 35%;
+}
 .progress{
     margin: 0.8rem 0;
     border-radius: 10px;
@@ -426,6 +437,9 @@ body {
     border-radius: 10px;
     opacity: 0.6;
     
+}
+.progress-bar.w-98{
+    width: 99%;
 }
 .progress-bar.w-90{
     width: 90%;
@@ -448,24 +462,28 @@ body {
 .progress-bar.w-70{
     width: 70%;
 }
+.progress-bar.w-40{
+    width: 40%;
+}
 .btn_cv {
-    font-size:22px;
+    font-size:20px;
     font-family: 'Josefin Sans', sans-serif;
     color:#7C1F4A;
     background:#fff;
-    border:0.5px solid #fff;
-    padding:15px 40px;
-    border-radius:80px;
-    font-weight:bold;
-    margin:3vh 20px;
+    border: 3px dotted #fff;
+    padding: 8px 35px;
+    border-radius: 40px;
+    margin: 10px;
+    margin-top: 30px;
     transition:0.4s ease-in-out;
-    text-decoration: none;
+    text-decoration: solid;
 }
 .btn_cv:hover {
     cursor:pointer;
     color: #fff;
     background-color: #7C1F4A;
-    text-decoration: underline;
+    font-size: 22px;
+    font-weight:bold;
 }
 .container .aboutme {
     display: flex;
@@ -481,6 +499,7 @@ body {
     border-radius: 80%;
     width: 200px;
     height: 200px;
+    box-shadow: 2px 2px 6px #115473;
 }
 .aboutme .perfil {
     display: flex;
@@ -489,6 +508,11 @@ body {
     width: 400px;
     height: 150px;
     justify-content: space-between;
+}
+.aboutme .perfil p {
+    text-align: center;
+    justify-content: space-between;
+    line-height: 1.2;    
 }
 #about_container section {
     display: flex;
@@ -505,10 +529,13 @@ body {
     text-decoration:underline;
     margin: 20px 0 0 0;
     width: 300px;
-    height: 100px;
+    height: 60px;
 }
 .btn_projetos {
-    margin: 40px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
 }
 #projeto2{
     display: none;
@@ -519,30 +546,56 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content:space-between;
+    padding: 10px;
     width: 800px;
     height: 150px;
+    border: 3px dashed white;
+    border-radius: 3%;
 }
 .interesse img {
-    border-radius: 22%;
+    border-radius: 8%;
     width: 200px;
-    height: 110px;
-    border: 1px border-shadow white;
-    padding: 10px 20px;
+    height: 100px;
+    box-shadow: 2px 2px 12px #000;
+    
 }
 .interesse p {
     align-self: center;
     width: max-content;
     height: max-content;
-    padding: 20px 10px;
+    padding-left: 25px;
+    padding-top: 10px;
 }
 .interesse i {
     font-size: 53px;
+    padding: 0 20px;
 }
 
 #efeito:hover {
     cursor:pointer;
-    transition:0.8s step-end;
+    transition:0.5s step-end;
     font-weight:bold;
     font-size: 60px;
     color:rgb(187, 145, 239);
+}
+.projeto_img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.projeto_img img {
+    border-radius: 8%;
+    width: 300px;
+    height: 200px;   
+}
+.projeto_img p {
+    width: 800px;
+    height: 200px;   
+}
+.st {
+    font-size: 32px;
+    text-shadow: 4px 4px 24px #000;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 50px;
 }
