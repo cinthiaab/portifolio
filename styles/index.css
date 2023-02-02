@@ -195,12 +195,21 @@ body {
     margin:1vh 0px;
 }
 
+#used {
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    height: 150px;
+    width: 150px;
+    margin: 15px;
+}
+
 #used div{
     font-size:14px;
     display:inline-block;
     padding:8px 10px;
     border:2px solid #fff;
-    margin: 40px 10px;
+    margin: 20px 10px;
     border-radius:50px;
     justify-content: center;
 }
@@ -533,9 +542,10 @@ body {
 }
 .btn_projetos {
     display: flex;
-    flex-direction: row;
+    flex-direction:row;
     align-items: center;
     justify-content:space-around;
+    margin-top: 100px;
 }
 #projeto2{
     display: none;
@@ -552,6 +562,7 @@ body {
     border: 3px dashed white;
     border-radius: 3%;
 }
+
 .interesse img {
     border-radius: 8%;
     width: 200px;
@@ -563,6 +574,7 @@ body {
     align-self: center;
     width: max-content;
     height: max-content;
+    font-size: 18px;
     padding-left: 25px;
     padding-top: 10px;
 }
@@ -581,16 +593,25 @@ body {
 .projeto_img {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content:space-around;
+    width: 1100px;
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
+    justify-self: center;
 }
 .projeto_img img {
     border-radius: 8%;
     width: 300px;
     height: 200px;   
+    margin: 10px 5px;
 }
 .projeto_img p {
-    width: 800px;
+    margin: 30px 0;
+    width: 400px;
     height: 200px;   
+    text-align:start;
+    justify-content: center;
 }
 .st {
     font-size: 32px;
@@ -598,4 +619,7 @@ body {
     font-weight: bolder;
     text-align: center;
     margin-top: 50px;
+}
+#work_container h2 {
+    text-align: center;
 }
