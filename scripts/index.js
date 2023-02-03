@@ -61,6 +61,7 @@ setTimeout(function(){
 function showprojeto1(){
     $("#projeto1").css("display","inherit");
     closeprojeto2();
+    closeprojeto3();
 }
 function closeprojeto1(){
     $("#projeto1").css("display","none");
@@ -68,9 +69,18 @@ function closeprojeto1(){
 function showprojeto2(){
     $("#projeto2").css("display","inherit");
     closeprojeto1();
+    closeprojeto3();
 }
 function closeprojeto2(){
     $("#projeto2").css("display","none");
+}
+function showprojeto3(){
+    $("#projeto3").css("display","inherit");
+    closeprojeto1();
+    closeprojeto2();
+}
+function closeprojeto3(){
+    $("#projeto3").css("display","none");
 }
 
 /* funções - areas de interesses */

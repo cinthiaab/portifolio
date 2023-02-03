@@ -88,7 +88,7 @@ body {
 }
 #middle h1 {
     color:#fff;
-    font-size:70px;
+    font-size:65px;
     text-decoration:underline;
 }
 #about {
@@ -201,7 +201,7 @@ body {
     justify-content:flex-start;
     height: 150px;
     width: 150px;
-    margin: 15px;
+    margin: 5px;
 }
 
 #used div{
@@ -222,7 +222,7 @@ body {
     transition: 0.3s ease-in;
 }
 .container h1 {
-    font-size:60px;
+    font-size:50px;
     text-decoration:underline;
 }
 .container p {
@@ -551,6 +551,10 @@ body {
     display: none;
     overflow: hidden;
 }
+#projeto3{
+    display: none;
+    overflow: hidden;
+}
 .interesse div {
     display: flex;
     flex-direction: row;
@@ -607,8 +611,9 @@ body {
     margin: 10px 5px;
 }
 .projeto_img p {
-    margin: 30px 0;
-    width: 400px;
+    font-size: 16px;
+    margin: 20px 0 0 30px;
+    width: 600px;
     height: 200px;   
     text-align:start;
     justify-content: center;
