@@ -192,7 +192,7 @@ body {
     cursor:pointer;
 }
 .container section {
-    margin:1vh 0px;
+    margin:0.5vh 0px;
 }
 
 #used {
@@ -201,15 +201,15 @@ body {
     justify-content:flex-start;
     height: 150px;
     width: 150px;
-    margin: 5px;
+    margin: 0 10px;
 }
 
 #used div{
-    font-size:14px;
+    font-size:15px;
     display:inline-block;
     padding:8px 10px;
     border:2px solid #fff;
-    margin: 20px 10px;
+    margin: 10px;
     border-radius:50px;
     justify-content: center;
 }
@@ -238,7 +238,7 @@ body {
     padding:8px 40px;
     border-radius:80px;
     font-weight:bold;
-    margin:1vh 10px;
+    margin: 2vh 10px;
     transition:0.4s ease-in-out;
 }
 .btn_one:hover {
@@ -497,7 +497,7 @@ body {
 .container .aboutme {
     display: flex;
     flex-direction: row;
-    justify-content:space-evenly
+    justify-content:space-evenly;
 }
 .container .aboutme .texto {
     width:800px;
@@ -523,6 +523,9 @@ body {
     justify-content: space-between;
     line-height: 1.2;    
 }
+.texto p {
+    font-size: 20px;
+}
 #about_container section {
     display: flex;
     flex-direction: row;
@@ -534,18 +537,21 @@ body {
 }
 .container .subtitle {
     color:#fff;
-    font-size:50px;
+    font-size:45px;
     text-decoration:underline;
-    margin: 20px 0 0 0;
-    width: 300px;
-    height: 60px;
+    margin: 10px 0;
+    width: 700px;
+    height: 48px;
+    text-align:start;
 }
 .btn_projetos {
     display: flex;
+    flex-wrap: wrap;
     flex-direction:row;
     align-items: center;
-    justify-content:space-around;
-    margin-top: 100px;
+    justify-content:center;
+    width: 1200px;
+    margin-top: 60px;
 }
 #projeto2{
     display: none;
@@ -598,7 +604,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content:space-around;
-    width: 1100px;
+    width: 1200px;
     height: 200px;
     padding: 10px;
     margin: 10px;
@@ -608,12 +614,12 @@ body {
     border-radius: 8%;
     width: 300px;
     height: 200px;   
-    margin: 10px 5px;
+    margin: 10px;
 }
 .projeto_img p {
     font-size: 16px;
     margin: 20px 0 0 30px;
-    width: 600px;
+    width: 550px;
     height: 200px;   
     text-align:start;
     justify-content: center;
